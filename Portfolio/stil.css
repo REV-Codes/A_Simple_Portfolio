@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+.header{
+    position: fixed;
+    top: 0 ;
+    left: 0;
+    width: 100%;
+    padding: 0px 10%;
+    background: transparent;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   z-index:100;
+   
+}
+
+.logo{
+    font-size: 35px;
+    color: #0e4467;
+    text-decoration: none;
+    font-weight: 700;
+
+}
+
+ .navbar a {
+    font-size: 23px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    padding-right: 45px;
+    transition: .3s;
+    
+    
+}
+
+
+
+.navbar a:hover {
+    color: #04243a;
+}
+
+.home{
+    height: 100vh;
+    background: linear-gradient(-90deg , #134364 65% ,#FFFBDE 35%) ;
+    display: flex;
+    justify-content:  space-between;
+    align-items: center;
+    padding: 0 10%;
+
+}
+.home-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    background: #134364;
+    border-radius: 50%;
+    border: 25px solid #FFFBDE;
+    outline: 25px solid #134364;
+
+}
+.home-image img{
+    position: relative;
+    max-width: 1050px;
+    bottom: 3px;
+    height: 550px;
+    
+}
+.home-content{
+    max-width: 600px;
+    color: #fff;
+    text-align: right;
+
+}
+.home-content h1 {
+    font-size: 50px;
+    line-height: 1.2;
+}
+.home-content h3{
+    font-size: 40px;
+    color: transparent;
+    -webkit-text-stroke: 1px#ffffff;
+    background-image: linear-gradient(#00abf0, #00abf0);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -410px 0;
+    animation: animeteText 6s linear infinite; 
+}
+@keyframes animeteText {
+0%,
+95%,
+100%{
+    background-position: -410px 0 ;
+}
+65%,
+85%{
+    background-position: 0 0;
+}
+}
+
+    
+
+.home-content p{
+    font-size: 16px;
+    margin-top: 20px;
+}
+.home-sci{
+    margin: 25px 0 40px;
+}
+.home-sci a{
+    display: inline-flex;
+
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 50%;
+    font-size: 20px;
+    color: aqua;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    margin-left: 12px ;
+
+}
+.home-sci a:hover{
+    background: aqua;
+    color:#fff;
+    border-color: aqua;
+    box-shadow: 0 0 10px aqua;
+}
+
+.btn{
+    padding: 12px 35px;
+    background: aqua;
+    border-radius: 40px;
+    font-size: 17px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-shadow: 0 0 20px white;
+}
+.btn :hover{
+    box-shadow: none;
+    background: aqua;
+
+}
